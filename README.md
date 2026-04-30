@@ -10,8 +10,9 @@ project/
   ├── main.py              # The Streamlit web interface
   ├── requirements.txt     # Project dependencies
   └── README.md            # Project documentation
+``` 
   
-Approach
+`##Approach`
 This project avoids the overhead of large machine learning models by utilizing a deterministic string-matching approach.
 
 Data Storage: Knowledge is decoupled from the code and stored in a structured faq_data.json file.
@@ -20,7 +21,7 @@ Retrieval Engine: The system uses Python's built-in difflib library to calculate
 
 User Interface: A web-based GUI built with Streamlit provides a clean, responsive chat environment, complete with quick-action buttons to solve the "blank canvas" user experience problem.
 
-Example Inputs & Outputs
+`##Example Inputs & Outputs`
 Input: "Where is my package?"
 Output: "Once your order ships, you will receive an email with a tracking link. You can also track it in your account under 'Order History'."
 
@@ -30,7 +31,7 @@ Output: "We accept returns within 30 days of delivery. Items must be unworn, unw
 Input: "Do you sell shoes?" (Out of scope)
 Output: "I'm sorry, I don't have an answer for that. Could you try rephrasing, or ask about shipping, returns, or sizing?"
 
-Limitations
+`##Limitations`
 Exact Keyword Reliance: The current difflib matching algorithm relies heavily on lexical similarity. If a user uses completely different vocabulary (e.g., "apparel" instead of "clothes"), the confidence score may drop below the required threshold.
 
 No Conversational Memory: The chatbot treats every query independently and does not remember previous interactions within the session.
