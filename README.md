@@ -39,8 +39,14 @@ This project avoids the overhead of large machine learning models by utilizing a
 * **Database Integration:** Migrate the static JSON dataset to an SQLite or PostgreSQL database for easier updating and scaling.
 
 ## How to Run Locally
-*Clone this repository.
-*Install the required dependencies:
-*pip install -r requirements.txt
-*Launch the Streamlit application:
-*streamlit run main.py
+
+1. Clone this repository.
+
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Launch the streamlit application
+   ```bash
+   streamlit run main.py
+   ```
